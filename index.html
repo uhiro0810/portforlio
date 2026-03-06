@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートフォリオサイト">
+  <title data-i18n="page_title">ポートフォリオ | 宇野 宏紀</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ========== Header / Navigation ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">YN</a>
+
+      <ul class="nav__list" id="nav-list">
+        <li><a href="#about" class="nav__link" data-i18n="nav_about">自己紹介</a></li>
+        <li><a href="#skills" class="nav__link" data-i18n="nav_skills">スキル</a></li>
+        <li><a href="#projects" class="nav__link" data-i18n="nav_projects">プロジェクト</a></li>
+        <li><a href="#experience" class="nav__link" data-i18n="nav_experience">経歴</a></li>
+        <li><a href="#certifications" class="nav__link" data-i18n="nav_certifications">資格</a></li>
+        <li><a href="#blog" class="nav__link" data-i18n="nav_blog">記事</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav_contact">お問い合わせ</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="言語切替">
+          <span class="lang-toggle__option" data-lang="ja">JP</span>
+          <span class="lang-toggle__separator">/</span>
+          <span class="lang-toggle__option" data-lang="en">EN</span>
+        </button>
+        <button class="nav__hamburger" id="nav-hamburger" aria-label="メニュー">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero" id="hero">
+    <div class="container hero__content">
+      <p class="hero__greeting" data-i18n="hero_greeting">こんにちは、私は</p>
+      <h1 class="hero__name">宇野 宏紀</h1>
+      <h2 class="hero__title" data-i18n="hero_title">画像処理AIエンジニア志望</h2>
+      <p class="hero__description" data-i18n="hero_description">
+        画像処理・コンピュータビジョンに情熱を持つ学生エンジニアです。深層学習を活用した画像認識・生成システムの開発に取り組んでいます。
+      </p>
+      <div class="hero__links">
+        <a href="https://github.com/uhiro0810" target="_blank" rel="noopener noreferrer" class="hero__social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="hero__social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/uhiro_0810/" target="_blank" rel="noopener noreferrer" class="hero__social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+      <a href="#contact" class="btn btn--primary" data-i18n="hero_cta">お問い合わせ</a>
+    </div>
+  </section>
+
+  <!-- ========== About ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title" data-i18n="about_title">自己紹介</h2>
+      <div class="about__grid">
+        <div class="about__image-wrapper">
+          <img src="images/profile.jpg" alt="宇野 宏紀" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="about__text">
+          <p data-i18n="about_text_1">
+            筑波大学情報学群情報科学類に在学中の3年生です。画像処理・コンピュータビジョンに興味を持ち、深層学習を用いた研究・開発に取り組んでいます。
+          </p>
+          <p data-i18n="about_text_2">
+            PyTorchやOpenCVを使った画像認識・物体検出・生成モデルの実装経験があります。学術的な知識と実装力を兼ね備えたエンジニアを目指しています。
+          </p>
+          <div class="about__info">
+            <div class="about__info-item">
+              <span class="about__info-label" data-i18n="about_location_label">所在地</span>
+              <span class="about__info-value" data-i18n="about_location_value">茨城県</span>
+            </div>
+            <div class="about__info-item">
+              <span class="about__info-label" data-i18n="about_education_label">学歴</span>
+              <span class="about__info-value" data-i18n="about_education_value">筑波大学 情報学群 情報科学類</span>
+            </div>
+            <div class="about__info-item">
+              <span class="about__info-label" data-i18n="about_interest_label">興味分野</span>
+              <span class="about__info-value" data-i18n="about_interest_value">画像処理 / AI / クラウド</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Skills ========== -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <h2 class="section__title" data-i18n="skills_title">スキル</h2>
+      <div class="skills__grid">
+        <!-- Languages -->
+        <div class="skill-card fade-in">
+          <h3 class="skill-card__title" data-i18n="skills_languages">プログラミング言語</h3>
+          <ul class="skill-card__list">
+            <li class="skill-card__item">
+              <span class="skill-card__name">Python</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 100%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">JavaScript / TypeScript</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 75%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">C / C#</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 50%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">HTML / CSS</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 50%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <!-- Frameworks -->
+        <div class="skill-card fade-in">
+          <h3 class="skill-card__title" data-i18n="skills_frameworks">フレームワーク / ライブラリ</h3>
+          <ul class="skill-card__list">
+            <li class="skill-card__item">
+              <span class="skill-card__name">PyTorch / TensorFlow</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 80%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">OpenCV</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 85%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">scikit-learn</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 75%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">NumPy / Pandas</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 90%"></div></div>
+            </li>
+          </ul>
+        </div>
+        <!-- Tools -->
+        <div class="skill-card fade-in">
+          <h3 class="skill-card__title" data-i18n="skills_tools">ツール / その他</h3>
+          <ul class="skill-card__list">
+            <li class="skill-card__item">
+              <span class="skill-card__name">Git / GitHub</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 85%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">Docker</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 70%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">AWS</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 50%"></div></div>
+            </li>
+            <li class="skill-card__item">
+              <span class="skill-card__name">Linux</span>
+              <div class="skill-card__bar"><div class="skill-card__bar-fill" style="width: 70%"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Projects ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section__title" data-i18n="projects_title">プロジェクト</h2>
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <article class="project-card fade-in">
+          <div class="project-card__image">
+            <img src="images/project1-othello.png" alt="オセロゲーム" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-i18n="project1_title">オセロゲーム</h3>
+            <p class="project-card__description" data-i18n="project1_description">
+              Python と Tkinter を用いた GUI オセロゲーム。プレイヤー対コンピュータのGUI対戦モードと、モンテカルロ法AIによる自動対戦・統計計測モードを実装。
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Tkinter</span>
+              <span class="tag">モンテカルロ法</span>
+              <span class="tag">GUI</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/uhiro0810" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="project-card fade-in">
+          <div class="project-card__image">
+            <img src="images/project2-gpa-calc.png" alt="GPA計算Webアプリ" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-i18n="project2_title">GPA計算Webアプリ</h3>
+            <p class="project-card__description" data-i18n="project2_description">
+              FastAPI + pandas で構築した成績管理Webアプリ。CSVをアップロードするだけで累積GPA（4.3制）とA以上の単位取得割合を自動計算。
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">pandas</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/uhiro0810" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="project-card fade-in">
+          <div class="project-card__image">
+            <img src="images/project3-au-expression.png" alt="AU条件付き顔表情変換" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-i18n="project3_title">AU条件付き顔表情変換</h3>
+            <p class="project-card__description" data-i18n="project3_description">
+              AffectNet と OpenFace の Action Unit 出力を活用し、SD2.1 + ControlNet + LoRA で顔の同一性を保ちながら表情のみを編集するシステム。ResNet18 の蒸留による AU 推定モデルも実装。
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Stable Diffusion</span>
+              <span class="tag">ControlNet</span>
+              <span class="tag">OpenFace</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/uhiro0810" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Experience ========== -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <h2 class="section__title" data-i18n="experience_title">経歴</h2>
+      <div class="timeline">
+        <div class="timeline__item fade-in">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <span class="timeline__date" data-i18n="exp1_date">2026年2月 - 2026年3月</span>
+            <h3 class="timeline__title" data-i18n="exp1_title">株式会社ExaWizards - ウィンターインターン</h3>
+            <p class="timeline__description" data-i18n="exp1_description">
+              AWS Neptune Analytics を用いた Graph RAG ベースの情報検索デモアプリを開発。グラフ構造を活用した検索の仕組みを理解しながら、LLM・検索基盤・クラウドサービスを組み合わせたシステム開発を経験。
+            </p>
+          </div>
+        </div>
+        <div class="timeline__item fade-in">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <span class="timeline__date" data-i18n="exp2_date">2025年8月 - 2026年2月</span>
+            <h3 class="timeline__title" data-i18n="exp2_title">株式会社Ridge-i - 長期インターン</h3>
+            <p class="timeline__description" data-i18n="exp2_description">
+              画像処理・機械学習領域の実務インターンとして、コルクのAI異常検知システム開発（調査・モデル改善・評価・発表）と、衛星データを用いたデータセンター候補地推薦システム開発に従事。仮説立案から改善・検証まで継続的に取り組みました。
+            </p>
+          </div>
+        </div>
+        <div class="timeline__item fade-in">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <span class="timeline__date" data-i18n="exp3_date">2023年4月 - 2026年3月</span>
+            <h3 class="timeline__title" data-i18n="exp3_title">筑波大学 情報学群 情報科学類</h3>
+            <p class="timeline__description" data-i18n="exp3_description">
+              コンピュータサイエンスを専攻。画像処理・コンピュータビジョンに関する研究を行っている。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Certifications ========== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <h2 class="section__title" data-i18n="certifications_title">資格</h2>
+      <div class="certifications__grid">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Blog / Articles ========== -->
+  <section class="section section--alt" id="blog">
+    <div class="container">
+      <h2 class="section__title" data-i18n="blog_title">技術記事</h2>
+      <div class="blog__grid">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GitHub Activity ========== -->
+  <section class="section" id="github">
+    <div class="container">
+      <h2 class="section__title" data-i18n="github_title">GitHub Activity</h2>
+      <div class="github__content fade-in">
+        <p class="github__description" data-i18n="github_description">
+          GitHubの貢献グラフをここに表示できます。以下のURLを自身のユーザー名に変更してください。
+        </p>
+        <div class="github__graph">
+          <!-- GitHub contribution graph embed -->
+          <!-- Replace YOUR_USERNAME with your GitHub username -->
+          <img
+            src="https://ghchart.rshah.org/6366f1/uhiro0810"
+            alt="GitHub Contribution Graph"
+            class="github__chart"
+            loading="lazy"
+          >
+        </div>
+        <div class="github__stats">
+          <a href="https://github.com/uhiro0810" target="_blank" rel="noopener noreferrer" class="btn btn--outline" data-i18n="github_view_profile">GitHubプロフィールを見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact ========== -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <h2 class="section__title" data-i18n="contact_title">お問い合わせ</h2>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="contact__description" data-i18n="contact_description">
+            お気軽にご連絡ください。インターンシップや就職に関するご相談もお待ちしております。
+          </p>
+          <div class="contact__details">
+            <div class="contact__item">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:s2312944@u.tsukuba.ac.jp">s2312944@u.tsukuba.ac.jp</a>
+            </div>
+            <div class="contact__item">
+              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <a href="https://github.com/uhiro0810" target="_blank" rel="noopener noreferrer">github.com/uhiro0810</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form__group">
+            <label for="name" class="form__label" data-i18n="contact_form_name">お名前</label>
+            <input type="text" id="name" name="name" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label" data-i18n="contact_form_email">メールアドレス</label>
+            <input type="email" id="email" name="email" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label" data-i18n="contact_form_message">メッセージ</label>
+            <textarea id="message" name="message" class="form__input form__textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" data-i18n="contact_form_submit">送信する</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__copy">&copy; 2025 Your Name. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="https://github.com/uhiro0810" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/uhiro_0810/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
