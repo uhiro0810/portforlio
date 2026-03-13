@@ -44,6 +44,9 @@ const translations = {
     project3_title: "AU条件付き顔表情変換",
     project3_description:
       "AffectNet と OpenFace の Action Unit 出力を活用し、SD2.1 + ControlNet + LoRA で顔の同一性を保ちながら表情のみを編集するシステム。ResNet18の蒸留によるAU推定モデルも実装。",
+    project4_title: "産業用異常検知比較実験",
+    project4_description:
+      "MVTec-AD を対象に GLAD / EfficientAD / PUAD の3手法を5カテゴリ（bottle / cable / capsule / pill / grid）で比較した実験リポジトリ。Colab 上での再現・依存関係修正・評価指標の統一・可視化・考察まで含む。",
     experience_title: "経歴",
     exp1_date: "2026年2月 - 2026年3月",
     exp1_title: "株式会社ExaWizards - ウィンターインターン",
@@ -73,6 +76,8 @@ const translations = {
     blog2_date: "2024年8月",
     blog3_title: "TypeScriptの型パズルを解いてみた",
     blog3_date: "2024年6月",
+    blog4_title: "GLAD・EfficientAD・PUADをColabで再現して5カテゴリ比較した話",
+    blog4_date: "2025年",
     github_title: "GitHub Activity",
     github_description:
       "GitHubの貢献グラフです。",
@@ -127,6 +132,9 @@ const translations = {
     project3_title: "AU-Conditioned Facial Expression Editing",
     project3_description:
       "Facial expression editing system using AffectNet and OpenFace Action Units. Edits expressions while preserving identity via SD2.1 + ControlNet + LoRA. Includes AU estimation model via ResNet18 knowledge distillation.",
+    project4_title: "Industrial Anomaly Detection Comparison",
+    project4_description:
+      "Experiment repository comparing GLAD / EfficientAD / PUAD across 5 MVTec-AD categories (bottle / cable / capsule / pill / grid). Covers Colab reproduction, dependency fixes, unified evaluation metrics, visualization, and analysis.",
     experience_title: "Experience",
     exp1_date: "Feb 2026 - Mar 2026",
     exp1_title: "ExaWizards Inc. - Winter Intern",
@@ -156,6 +164,8 @@ const translations = {
     blog2_date: "Aug 2024",
     blog3_title: "Solving TypeScript Type Puzzles",
     blog3_date: "Jun 2024",
+    blog4_title: "Reproducing GLAD, EfficientAD & PUAD on Colab and Comparing 5 Categories",
+    blog4_date: "2025",
     github_title: "GitHub Activity",
     github_description: "GitHub contribution graph.",
     github_view_profile: "View GitHub Profile",
