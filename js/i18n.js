@@ -48,7 +48,7 @@ const translations = {
     project4_description:
       "MVTec-AD を対象に GLAD / EfficientAD / PUAD の3手法を5カテゴリ（bottle / cable / capsule / pill / grid）で比較した実験リポジトリ。Colab 上での再現・依存関係修正・評価指標の統一・可視化・考察まで含む。",
     experience_title: "経歴",
-    exp1_date: "2026年2月 - 2026年3月",
+    exp1_date: "2026年2月 - 2026年4月",
     exp1_title: "株式会社ExaWizards - ウィンターインターン",
     exp1_description:
       "AWS Neptune Analytics を用いた Graph RAG ベースの情報検索デモアプリを開発。グラフ構造を活用した検索の仕組みを理解しながら、LLM・検索基盤・クラウドサービスを組み合わせたシステム開発を経験。",
@@ -69,6 +69,8 @@ const translations = {
     cert3_date: "2024年6月 取得",
     cert4_title: "TOEIC 800点",
     cert4_date: "2023年12月 取得",
+    cert5_title: "GCI 修了",
+    cert5_date: "東京大学 GCI（グローバル消費者インテリジェンス）",
     blog_title: "技術記事",
     blog1_title: "Reactのパフォーマンス最適化テクニック5選",
     blog1_date: "2024年10月",
@@ -136,7 +138,7 @@ const translations = {
     project4_description:
       "Experiment repository comparing GLAD / EfficientAD / PUAD across 5 MVTec-AD categories (bottle / cable / capsule / pill / grid). Covers Colab reproduction, dependency fixes, unified evaluation metrics, visualization, and analysis.",
     experience_title: "Experience",
-    exp1_date: "Feb 2026 - Mar 2026",
+    exp1_date: "Feb 2026 - Apr 2026",
     exp1_title: "ExaWizards Inc. - Winter Intern",
     exp1_description:
       "Developed a Graph RAG-based information retrieval demo app using AWS Neptune Analytics. Gained experience combining LLM, retrieval infrastructure, and cloud services through graph-structured information retrieval.",
@@ -157,6 +159,8 @@ const translations = {
     cert3_date: "Jun 2024",
     cert4_title: "TOEIC 800",
     cert4_date: "Dec 2023",
+    cert5_title: "GCI Certificate",
+    cert5_date: "Univ. of Tokyo GCI (Global Consumer Intelligence)",
     blog_title: "Blog / Articles",
     blog1_title: "5 React Performance Optimization Techniques",
     blog1_date: "Oct 2024",
