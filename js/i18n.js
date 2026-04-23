@@ -1,4 +1,4 @@
-/**
+﻿/**
  * i18n - Japanese / English bilingual support
  */
 const translations = {
@@ -10,16 +10,12 @@ const translations = {
     nav_experience: "経歴",
     nav_certifications: "資格",
     nav_blog: "記事",
-    nav_contact: "お問い合わせ",
-    hero_greeting: "こんにちは、私は",
-    hero_title: "画像処理AIエンジニア志望",
     hero_description:
       "画像処理・コンピュータビジョンに情熱を持つ学生エンジニアです。深層学習を活用した画像認識・生成システムの開発に取り組んでいます。",
-    hero_cta: "お問い合わせ",
     about_title: "自己紹介",
     about_photo_placeholder: "写真を配置",
     about_text_1:
-      "筑波大学情報学群情報科学類に在学中の3年生です。画像処理・コンピュータビジョンに興味を持ち、深層学習を用いた研究・開発に取り組んでいます。",
+      "筑波大学情報学群情報科学類に在学中の4年生です。画像処理・コンピュータビジョンに興味を持ち、深層学習を用いた研究・開発に取り組んでいます。",
     about_text_2:
       "PyTorchやOpenCVを使った画像認識・物体検出・生成モデルの実装経験があります。学術的な知識と実装力を兼ね備えたエンジニアを目指しています。",
     about_location_label: "所在地",
@@ -80,17 +76,8 @@ const translations = {
     blog3_date: "2024年6月",
     blog4_title: "GLAD・EfficientAD・PUADをColabで再現して5カテゴリ比較した話",
     blog4_date: "2025年",
-    github_title: "GitHub Activity",
-    github_description:
-      "GitHubの貢献グラフです。",
-    github_view_profile: "GitHubプロフィールを見る",
-    contact_title: "お問い合わせ",
-    contact_description:
-      "お気軽にご連絡ください。インターンシップや就職に関するご相談もお待ちしております。",
-    contact_form_name: "お名前",
-    contact_form_email: "メールアドレス",
-    contact_form_message: "メッセージ",
-    contact_form_submit: "送信する",
+    blog5_title: "図面解析におけるマルチモーダル Graph RAG の有効性検証とデモアプリ開発",
+    blog5_date: "2026年",
   },
   en: {
     page_title: "Portfolio | Hiroki Uno",
@@ -100,16 +87,12 @@ const translations = {
     nav_experience: "Experience",
     nav_certifications: "Certifications",
     nav_blog: "Blog",
-    nav_contact: "Contact",
-    hero_greeting: "Hi, I'm",
-    hero_title: "Aspiring Image Processing AI Engineer",
     hero_description:
       "A student engineer passionate about image processing and computer vision. I develop image recognition and generation systems leveraging deep learning.",
-    hero_cta: "Get in Touch",
     about_title: "About Me",
     about_photo_placeholder: "Place photo here",
     about_text_1:
-      "3rd-year student at University of Tsukuba, School of Informatics and Engineering. Passionate about image processing and computer vision, I focus on research and development using deep learning.",
+      "4th-year student at University of Tsukuba, School of Informatics and Engineering. Passionate about image processing and computer vision, I focus on research and development using deep learning.",
     about_text_2:
       "I have hands-on experience building image recognition, object detection, and generative models using PyTorch and OpenCV. I aim to be an engineer who bridges academic knowledge with practical implementation.",
     about_location_label: "Location",
@@ -170,16 +153,8 @@ const translations = {
     blog3_date: "Jun 2024",
     blog4_title: "Reproducing GLAD, EfficientAD & PUAD on Colab and Comparing 5 Categories",
     blog4_date: "2025",
-    github_title: "GitHub Activity",
-    github_description: "GitHub contribution graph.",
-    github_view_profile: "View GitHub Profile",
-    contact_title: "Contact",
-    contact_description:
-      "Feel free to reach out. I'm open to discussions about internships and job opportunities.",
-    contact_form_name: "Name",
-    contact_form_email: "Email",
-    contact_form_message: "Message",
-    contact_form_submit: "Send Message",
+    blog5_title: "Validating Multimodal Graph RAG for Drawing Analysis and Building a Demo App",
+    blog5_date: "2026",
   },
 };
 
